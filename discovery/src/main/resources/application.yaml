@@ -1,0 +1,5 @@
+spring: # telling eureka to read config from config server
+  application:
+    name: discovery
+  config:
+    import: optional:configserver:http://localhost:8888
